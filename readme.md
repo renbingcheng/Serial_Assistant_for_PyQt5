@@ -50,6 +50,15 @@ You can use pip to install PyQt5 and PySerial:
 ```bash
 pip install PyQt5 pyserial
 ```
+### Using pyuic5 to Convert Files / 使用 pyuic5 转换文件
+
+Run the pyuic5 command to convert  `.ui` files into `.py` files. The command format is as follows:
+
+运行 `pyuic5` 命令将 `.ui` 文件转换为 `.py` 文件。命令格式如下：
+
+```bash
+pyuic5 your_ui_file.ui -o output_file.py
+```
 
 ### Running the Program / 运行程序
 
@@ -129,17 +138,17 @@ Replace `your_script.py` with the name of your main Python script file.
 
 We welcome contributions! Please submit new features, bug fixes, or improvements through pull requests or issues.
 
-我们欢迎贡献！请通过 pull requests 或 issues 提出新功能、bug 修复或改进。
-
 ## Version History / 版本历史
 
 - First release (December 20, 2023): Basic serial communication functions.
+  - 第一版（2023年12月20日）：基本的串口通信功能。
 
-- 第一版（2023年12月20日）：基本的串口通信功能。
+- Second release (December 21, 2023): Added control bits, parity bits, stop bits, flow control, and DTR/RTS settings. Enhanced user experience with button state interlock to prevent conflicts and resolved cache issues caused by DTR/RTS settings errors.
+  - 第二版（2023年12月21日）：新增控制位、校验位、停止位、流控以及 DTR/RTS 设置项。通过开关按钮状态互锁防止冲突，解决了由于 DTR/RTS 设置错误导致的缓存问题。
 
 ## Author / 作者
 
-- RENBINGCHENG
+- RENBINGCHENG,ChatGPT
 
 ## License / 许可证
 
